@@ -1,4 +1,4 @@
-# VK ANE v0.1.0
+# VK ANE v0.1.1
 
 Adobe native extension for VK social network.
 
