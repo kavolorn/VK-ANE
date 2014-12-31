@@ -15,7 +15,7 @@ package vk.views.application
 	import starling.animation.Transitions;
 	import starling.display.Sprite;
 
-	import vk.configuration.ColorSeasonConfiguration;
+	import vk.configuration.Configuration;
 	import vk.views.application.interfaces.IApplicationView;
 	import vk.views.screens.HomeScreenView;
 
@@ -47,7 +47,7 @@ package vk.views.application
 
 		public function ApplicationView()
 		{
-			_context = new Context().install(MVCSBundle).configure(ColorSeasonConfiguration, new ContextView(this));
+			_context = new Context().install(MVCSBundle).configure(Configuration, new ContextView(this));
 		}
 
 		public function initialize():void

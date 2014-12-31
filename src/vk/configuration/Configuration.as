@@ -8,7 +8,7 @@ package vk.configuration
 
 	import vk.views.application.interfaces.IApplicationView;
 
-	public class ColorSeasonConfiguration implements IConfig
+	public class Configuration implements IConfig
 	{
 		[Inject]
 		public var injector:IInjector;
