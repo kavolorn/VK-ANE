@@ -1,4 +1,4 @@
-# VK ANE v0.1.1
+# VK ANE v0.2.0
 
 PRO Native Extension for Adobe AIR which enables VK social network capabilities in your apps.
 
@@ -10,7 +10,7 @@ License server can be found here [http://kavolorn.ru/pro-native-extensions](http
 
 ANE supports Android-ARM, Android-x86, iPhone-ARM and iPhone-x86 including x64 bit platforms introduced in Adobe AIR SDK 16.
 
-Extension is build with 16.0.0.250 Adobe AIR SDK, iOS 8.1 SDK, Android SDK Tools Revision 23.0.5 and Build Tools: 21.1.0.
+Extension is build with 16.0.0.259 Adobe AIR SDK, iOS 8.1 SDK, Android SDK Tools Revision 23.0.5 and Build Tools: 21.1.0.
 
 Repository contains module file for IntelliJ IDEA.
 
@@ -19,6 +19,10 @@ Repository contains module file for IntelliJ IDEA.
 iOS 7.0+, Android 9+
 
 ## Version history
+
+### 0.2.0
+
+- Time limitation for license has been removed.
 
 ### 0.1.1
 
