@@ -14,6 +14,64 @@ Extension is build with 16.0.0.259 Adobe AIR SDK, iOS 8.1 SDK, Android SDK Tools
 
 Repository contains module file for IntelliJ IDEA.
 
+## How to run
+
+The most important thing to keep in mind is that this demo setup is linked with package id 'ru.kavolorn.ane.VK.Demo'.
+You can only change this id in your own license key (where you can have up to 3 ids).
+
+So let's configure this demo for your own vk application.
+
+### Application registration process
+
+Goto [my applications](https://vk.com/apps?act=manage) page and create your application. After the registration in
+the options page you can see your vk application id. Current demo is using 4620596 and you will have your own.
+
+On the options page fill 3 fields app bundle id for iOS, app id for iOS and android package name with value 
+'ru.kavolorn.ane.VK.Demo'. When you will have your own key you can link your vk app with your own application id.
+
+Also you should fill certificate fingerprint for Android. We will get this fingerprint directly from our extension later.
+
+### Configuring application descriptor
+
+Now let's apply our vk application id in application descriptor file VK_Demo-app.xml. You should change 4620596 number
+with your own number in this lines for iOS setup:
+
+```xml
+<key>CFBundleURLTypes</key>
+<array>
+    <dict>
+         <key>CFBundleURLSchemes</key>
+        <array>
+            <string>vk4620596</string>
+        </array>
+    </dict>
+</array>
+```
+
+Add this lines if you modifying your own application descriptor.
+
+Make sure that you have registered activities in your android manifest file:
+
+```xml
+<application android:enabled="true" android:allowClearUserData="true">
+    <activity android:name="com.vk.sdk.VKOpenAuthActivity" />
+    <activity android:name="ru.kavolorn.ane.activities.VKOpenAuthActivity" />
+</application>
+```
+
+### ActionScript side
+
+You can check how I use native extension in HomeScreenView.as file. It is the main file in our project.
+
+For Android setup you can get you certificate fingerprint by calling this method:
+
+```actionscript3
+trace(VK.getInstance().getCertificateFingerprint());
+```
+
+After that you are able to put value in your vk application options page.
+
+
 ## Requirements
 
 iOS 7.0+, Android 9+
