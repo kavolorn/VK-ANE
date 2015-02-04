@@ -78,6 +78,10 @@ iOS 7.0+, Android 9+
 
 ## Version history
 
+### 0.2.1
+
+- Minor bugfixes.
+
 ### 0.2.0
 
 - Time limitation for license has been removed.

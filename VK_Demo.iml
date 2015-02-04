@@ -8,11 +8,11 @@
             <entry library-id="4c195df3-288d-468a-90ee-693ba70a33e0">
               <dependency linkage="Merged" />
             </entry>
-            <entry library-id="b5ec04fb-722c-4e58-9285-6b78ebf60c90">
+            <entry library-id="b4507ad4-b50a-4c7d-9aa7-809c4d283fb4">
               <dependency linkage="Merged" />
             </entry>
           </entries>
-          <sdk name="adobe-air-16.0.0.250" />
+          <sdk name="adobe-air-16.0.0.283" />
         </dependencies>
         <compiler-options />
         <packaging-air-desktop />
@@ -40,7 +40,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/assets" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="adobe-air-16.0.0.250" jdkType="Flex SDK Type (new)" />
+    <orderEntry type="jdk" jdkName="adobe-air-16.0.0.283" jdkType="Flex SDK Type (new)" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library" exported="">
       <library type="flex">
@@ -55,7 +55,7 @@
     </orderEntry>
     <orderEntry type="module-library" exported="">
       <library type="flex">
-        <properties id="b5ec04fb-722c-4e58-9285-6b78ebf60c90" />
+        <properties id="b4507ad4-b50a-4c7d-9aa7-809c4d283fb4" />
         <CLASSES>
           <root url="file://$MODULE_DIR$/anes" />
         </CLASSES>
