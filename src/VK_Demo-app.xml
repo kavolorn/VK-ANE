@@ -23,10 +23,10 @@
 	<!-- A string value of the format <0-999>.<0-999>.<0-999> that represents application version which can be used to check for application upgrade.
 		 Values can also be 1-part or 2-part. It is not necessary to have a 3-part value.
 		 An updated version of application must have a versionNumber value higher than the previous version. Required for namespace >= 2.5. -->
-	<versionNumber>0.1.0</versionNumber>
+	<versionNumber>1.0.0</versionNumber>
 
 	<!-- A string value (such as "v1", "2.5", or "Alpha 1") that represents the version of the application, as it should be shown to users. Optional. -->
-	<versionLabel>0.1.0</versionLabel>
+	<versionLabel>1.0.0</versionLabel>
 
 	<!-- An application version designator (such as "v1", "2.5", or "Alpha 1"). Required for namespace < 2.5. -->
 	<!--<version>0.1.0</version>-->
@@ -246,11 +246,11 @@
                 <!--<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>-->
                 <!--<uses-feature android:required="true" android:name="android.hardware.touchscreen.multitouch"/>-->
 
-				<uses-sdk android:minSdkVersion="9" android:targetSdkVersion="20" />
+				<uses-sdk android:minSdkVersion="10" android:targetSdkVersion="20" />
 
                 <application android:enabled="true" android:allowClearUserData="true">
 					<activity android:name="com.vk.sdk.VKOpenAuthActivity" />
-					<activity android:name="ru.kavolorn.ane.activities.VKOpenAuthActivity" />
+					<activity android:name="ru.kavolorn.ane.activities.VKOpenAuthActivity" android:theme="@style/Theme.Transparent"/>
                 </application>
             </manifest>
             ]]>

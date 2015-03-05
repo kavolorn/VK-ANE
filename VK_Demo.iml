@@ -20,7 +20,7 @@
           <files-to-package>
             <FilePathAndPathInPackage file-path="$MODULE_DIR$/assets/android/icons" path-in-package="icons" />
           </files-to-package>
-          <AirSigningOptions keystore-path="$MODULE_DIR$/../Data/signing/android_distribution.p12" use-temp-certificate="false" />
+          <AirSigningOptions keystore-path="$MODULE_DIR$/../../Data/signing/android_development.p12" use-temp-certificate="false" />
         </packaging-android>
         <packaging-ios enabled="true" use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/src/VK_Demo-app.xml" package-file-name="VK_Demo">
           <files-to-package>
@@ -28,7 +28,7 @@
             <FilePathAndPathInPackage file-path="$MODULE_DIR$/assets/Default-568h@2x.png" path-in-package="Default-568h@2x.png" />
             <FilePathAndPathInPackage file-path="$MODULE_DIR$/assets/Default@2x.png" path-in-package="Default@2x.png" />
           </files-to-package>
-          <AirSigningOptions adt-options="-hideAneLibSymbols yes" sdk="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk" keystore-path="$MODULE_DIR$/../Data/signing/ios_development.p12" provisioning-profile-path="$MODULE_DIR$/../Data/signing/ios_development.mobileprovision" />
+          <AirSigningOptions adt-options="-hideAneLibSymbols yes" sdk="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk" keystore-path="$MODULE_DIR$/../../Data/signing/ios_development.p12" provisioning-profile-path="$MODULE_DIR$/../../Data/signing/ios_development.mobileprovision" />
         </packaging-ios>
       </configuration>
     </configurations>
