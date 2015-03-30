@@ -1,4 +1,4 @@
-# VK ANE v1.0.0
+# VK ANE v1.0.1
 
 PRO Native Extension for Adobe AIR which enables VK social network capabilities 
 in your apps.
@@ -11,7 +11,7 @@ any number of licenses each for up to 3 applications and without any limitations
 in time! License server can be found here [http://kavolorn.ru/pro-native-extensions](http://kavolorn.ru/pro-native-extensions).
 
 ANE supports Android-ARM, Android-x86, iPhone-ARM and iPhone-x86 including x64 
-bit platforms introduced in Adobe AIR SDK 16. It is build with 16.0.0.283 Adobe 
+bit platforms introduced in Adobe AIR SDK 16. It is build with 16.0.0.292 Adobe 
 AIR SDK. Repository contains module file for IntelliJ IDEA.
 
 ## How to run
@@ -21,6 +21,13 @@ package id 'ru.kavolorn.ane.VK.Demo'. You can only change this id in your own
 license key (where you can have up to 3 ids).
 
 So let's configure this demo for your own vk application.
+
+### Be sure about application id
+
+Please check if your IDE adds prefix "air." or suffix ".debug" for application ID.
+If so, demo won't work.
+
+See how to disable it [here](https://github.com/kavolorn/VK-ANE/issues/2#issuecomment-86448177).
 
 ### Application registration process
 
@@ -83,6 +90,10 @@ After that you are able to put value in your vk application options page.
 iOS 7.0+, Android 10+
 
 ## Version history
+
+### 1.0.1
+
+- Fixed bug that causes offline app crash.
 
 ### 1.0.0
 
