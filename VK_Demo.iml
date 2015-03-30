@@ -12,7 +12,7 @@
               <dependency linkage="Merged" />
             </entry>
           </entries>
-          <sdk name="adobe-air-16.0.0.283" />
+          <sdk name="adobe-air-16.0.0.292" />
         </dependencies>
         <compiler-options />
         <packaging-air-desktop />
@@ -40,7 +40,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/assets" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="adobe-air-16.0.0.283" jdkType="Flex SDK Type (new)" />
+    <orderEntry type="jdk" jdkName="adobe-air-16.0.0.292" jdkType="Flex SDK Type (new)" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library" exported="">
       <library type="flex">

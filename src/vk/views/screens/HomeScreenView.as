@@ -219,6 +219,10 @@ package vk.views.screens
 				_statusBar.text = "User is logged out.";
 				VK.getInstance().authorize(SCOPE, true, false, false);
 			}
+			else if (error.errorCode == VKError.VK_API_REQUEST_HTTP_FAILED)
+			{
+				// Is internet connection working?
+			}
 		}
 	}
 }

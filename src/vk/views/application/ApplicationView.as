@@ -62,6 +62,7 @@ package vk.views.application
 			_transitionManager.duration = 0.4;
 			_transitionManager.delay = 0.2;
 			_transitionManager.ease = Transitions.EASE_OUT;
+			_transitionManager.skipNextTransition = true;
 
 			_overlay = new LayoutGroup();
 			_overlay.layout = new AnchorLayout();
