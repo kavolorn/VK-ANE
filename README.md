@@ -91,6 +91,11 @@ iOS 7.0+, Android 10+
 
 ## Version history
 
+### 1.2.0
+
+- Updated VK Android SDK version.
+- Added support for for user email extraction. 
+
 ### 1.1.0
 
 - Improved compatibility with 3rd party extensions on iOS.
