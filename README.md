@@ -1,4 +1,4 @@
-# VK ANE v1.1.0
+# VK ANE v1.2.0
 
 PRO Native Extension for Adobe AIR which enables VK social network capabilities 
 in your apps.
