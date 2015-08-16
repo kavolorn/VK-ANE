@@ -251,6 +251,7 @@
                 <application android:enabled="true" android:allowClearUserData="true">
 					<activity android:name="com.vk.sdk.VKOpenAuthActivity" />
 					<activity android:name="ru.kavolorn.ane.activities.VKOpenAuthActivity" android:theme="@style/Theme.Transparent"/>
+					<activity android:name="ru.kavolorn.ane.activities.VKShareActivity" android:theme="@style/Theme.Transparent"/>
                 </application>
             </manifest>
             ]]>

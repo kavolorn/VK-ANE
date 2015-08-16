@@ -182,6 +182,30 @@ package vk.views.screens
 			});
 			_buttonsGroup.addChild(audioButton);
 
+			var shareButton:Button = new Button();
+			shareButton.label = 'Share';
+			shareButton.addEventListener(Event.TRIGGERED, function (event:Event):void
+			{
+				VK.getInstance().share({
+					text : "This is a super resource with professional Adobe AIR native extensions.",
+					link : {
+						text : "PRO Native Extensions",
+						url : "http://kavolorn.ru/pro-native-extensions"
+					},
+					photos : [
+						// Pre uploaded set of photos
+						"photo-30022666_375485324"
+					],
+					complete : function(postId:String) {
+						_scrollText.text = "Sharing completed. Post id " + postId + ".";
+					},
+					cancel : function() {
+						_scrollText.text = "Sharing was canceled.";
+					}
+				});
+			});
+			_buttonsGroup.addChild(shareButton);
+
 			var logoutButton:Button = new Button();
 			logoutButton.label = 'Logout';
 			logoutButton.addEventListener(Event.TRIGGERED, function (event:Event):void
