@@ -24,7 +24,8 @@ package vk.views.screens
 		public static const SCOPE:Array = [
 			VKScope.WALL,
 			VKScope.AUDIO,
-			VKScope.FRIENDS
+			VKScope.FRIENDS,
+			VKScope.EMAIL
 		];
 
 		private var _header:Header;
