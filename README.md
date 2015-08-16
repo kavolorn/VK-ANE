@@ -1,4 +1,4 @@
-# VK ANE v1.2.0
+# VK ANE v2.0.0
 
 PRO Native Extension for Adobe AIR which enables VK social network capabilities 
 in your apps.
@@ -90,6 +90,11 @@ After that you are able to put value in your vk application options page.
 iOS 7.0+, Android 10+
 
 ## Version history
+
+### 2.0.0
+
+- Updated VK iOS SDK to version 1.1.12.
+- Added support for native share dialogs for both Android and iOS.
 
 ### 1.2.0
 
