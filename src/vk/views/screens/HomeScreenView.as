@@ -25,7 +25,8 @@ package vk.views.screens
 			VKScope.WALL,
 			VKScope.AUDIO,
 			VKScope.FRIENDS,
-			VKScope.EMAIL
+			VKScope.EMAIL,
+			VKScope.PHOTOS
 		];
 
 		private var _header:Header;
@@ -48,7 +49,7 @@ package vk.views.screens
 			// Fires up usualy right before INITIALIZATION_SUCCESS and notifies us about waked up session
 			VK.getInstance().addEventListener(VKEvent.SESSION_WAKED_UP, function (event:VKEvent):void
 			{
-				trace(VK.getInstance().getUserToken());
+				trace(JSON.stringify(VK.getInstance().getUserToken()));
 				_statusBar.text = "User is logged in.";
 			});
 
@@ -77,14 +78,14 @@ package vk.views.screens
 			// Fires up when SDK received new token
 			VK.getInstance().addEventListener(VKEvent.RECEIVED_NEW_TOKEN, function (event:VKEvent):void
 			{
-				trace(VK.getInstance().getUserToken());
+				trace(JSON.stringify(VK.getInstance().getUserToken()));
 				_statusBar.text = "User is logged in.";
 			});
 
 			// Fires up when SDK renewed token
 			VK.getInstance().addEventListener(VKEvent.RENEWED_TOKEN, function (event:VKEvent):void
 			{
-				trace(VK.getInstance().getUserToken());
+				trace(JSON.stringify(VK.getInstance().getUserToken()));
 				_statusBar.text = "User is logged in.";
 			});
 		}

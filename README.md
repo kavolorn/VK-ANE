@@ -96,9 +96,13 @@ iOS 7.0+, Android 10+
 - Updated VK iOS SDK to version 1.1.12.
 - Added support for native share dialogs for both Android and iOS.
 
+Update notes:
+
+VK.getInstance().getUserToken() now returns object rather than json string.
+
 ### 1.2.0
 
-- Updated VK Android SDK version.
+- Updated VK Android SDK to version 1.3.10.
 - Added support for for user email extraction. 
 
 ### 1.1.0
