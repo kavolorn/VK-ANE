@@ -67,7 +67,8 @@ Make sure that you have registered activities in your android manifest file:
 ```xml
 <application android:enabled="true" android:allowClearUserData="true">
     <activity android:name="com.vk.sdk.VKOpenAuthActivity" />
-    <activity android:name="ru.kavolorn.ane.activities.VKOpenAuthActivity" />
+    <activity android:name="ru.kavolorn.ane.vk.activities.VKOpenAuthActivity" android:theme="@style/Theme.Transparent"/>
+    <activity android:name="ru.kavolorn.ane.vk.activities.VKShareActivity" android:theme="@style/Theme.Transparent"/>
 </application>
 ```
 
@@ -95,10 +96,13 @@ iOS 7.0+, Android 10+
 
 - Updated VK iOS SDK to version 1.1.12.
 - Added support for native share dialogs for both Android and iOS.
+- Reduced binary size. 
 
-Update notes:
+Upgrade notes:
 
-VK.getInstance().getUserToken() now returns object rather than json string.
+- VK.getInstance().getUserToken() now returns object rather than json string.
+- New activity for sharing should be added to manifest.
+- Activities are now in different namespace than before.
 
 ### 1.2.0
 
